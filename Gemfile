@@ -55,6 +55,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'popper_js', '~> 1.11.1'
 gem 'bootstrap', '4.0.0.alpha6'
 gem 'will_paginate', '~> 3.1.1'
+gem 'geocoder'
+gem 'figaro'
 gem 'simple_form'
 gem 'font-awesome-rails'
 gem 'devise'
