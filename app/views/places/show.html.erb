@@ -128,12 +128,14 @@
 
   <div class="clear"></div>
 
-  
-  <% @place.photos.each do |photo| %>
-    <%= image_tag photo.picture %>
-    <%= photo.caption %>
-  <% end %>
-  
+  <div>
+    <% @place.photos.each do |photo| %>
+      <div class="col-12 col-sm-6">
+        <%= image_tag photo.picture %>
+        <%= photo.caption %>
+      </div>
+    <% end %>
+  </div>
   
 
 
