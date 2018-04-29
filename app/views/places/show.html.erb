@@ -130,10 +130,11 @@
 
   <div class="clear"></div>
 
-  <div>
+  <div class="row">
     <% @place.photos.each do |photo| %>
       <div class="col-12 col-sm-6">
-        <%= image_tag photo.picture %>
+        <%= image_tag photo.picture, class:"img-fluid", alt:"Responsive image" %>
+        <br />
         <%= photo.caption %>
       </div>
     <% end %>
