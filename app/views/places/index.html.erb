@@ -1,5 +1,7 @@
 <div class="booyah-box col-10 offset-1 text-center" >
-
+  <% if image_tag @photo.picture.present? %>
+    <%= image_tag @photo.picture, class:"img-fluid", alt:"Responsive image" %>
+  <% end %>
 </div>
   
 <% @places.each do |place| %>
