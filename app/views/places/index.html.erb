@@ -5,14 +5,14 @@
   </ol>
   <div class="carousel-inner" role="listbox">
     <div class="carousel-item active">
-      <%= image_tag 'food_slide1.jpeg', class: 'd-block img-fluid' %>
-      <div class="carousel-caption d-none d-md-block">
+      <%= image_tag 'food_slide1.jpg', class: 'img-fluid' %>
+      <div class="carousel-caption d-md-block">
         <h3>Find those hidden gems!</h3>
       </div>
     </div>
     <div class="carousel-item">
-      <%= image_tag 'food_slide2.jpeg', class: 'd-block img-fluid' %>
-      <div class="carousel-caption d-none d-md-block">
+      <%= image_tag 'food_slide2.jpg', class: 'img-fluid' %>
+      <div class="carousel-caption d-md-block">
         <h3>Looking for something more elegant?</h3>
       </div>
     </div>
@@ -26,14 +26,7 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-
-
-<div class="booyah-box col-10 offset-1 text-center" >
-  <% if image_tag @photo.picture.present? %>
-    <%= image_tag @photo.picture, class:"img-fluid", alt:"Responsive image" %>
-  <% end %>
-</div>
-  
+ 
 <% @places.each do |place| %>
 
   <div class="booyah-box col-10 offset-1">
