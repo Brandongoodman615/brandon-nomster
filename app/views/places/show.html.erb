@@ -116,8 +116,10 @@
   <br />
   <div class="row">
     <% @place.photos.each do |photo| %>
-      <div class="col-8 offset-2">
-        <%= image_tag photo.picture, class: "img-fluid", alt:"Responsive image" %>
+      <div class="col-8 offset-2 text-center">
+        <% if photo.picture.present? %>
+          <%= image_tag photo.picture, class: "img-fluid", alt:"Responsive image" %>
+          <% end %>
         <br />
         <h2 class="text-center"><%= photo.caption %></h2>
         <hr>
